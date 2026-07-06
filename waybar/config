@@ -1,0 +1,83 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 40,
+  "spacing": 0,
+
+  "modules-left": [
+    "niri/workspaces"
+  ],
+
+  "modules-center": [],
+
+  "modules-right": [
+    "pulseaudio",
+    "bluetooth",
+    "network",
+    "battery",
+    "custom/cpu",
+    "clock",
+    "custom/power"
+  ],
+
+  "niri/workspaces": {
+    "format": "{index}",
+    "on-click": "activate"
+  },
+
+  "pulseaudio": {
+    "format": "vol\n{volume}%",
+    "format-muted": "muted",
+    "scroll-step": 5,
+    "on-click": "pavucontrol",
+    "on-click-right": "pamixer -t"
+  },
+
+  "bluetooth": {
+    "format": "bt",
+    "format-disabled": "bt\noff",
+    "format-off": "bt\noff",
+    "format-on": "bt\non",
+    "format-connected": "bt\non",
+    "on-click": "blueman-manager"
+  },
+
+  "network": {
+    "format-wifi": "net\non",
+    "format-ethernet": "net\neth",
+    "format-disconnected": "net\noff",
+    "tooltip-format": "{ifname}: {ipaddr}"
+  },
+
+  "battery": {
+    "bat": "BAT1",
+    "adapter": "ADP1",
+    "interval": 10,
+    "format": "bat\n{capacity}%",
+    "format-charging": "bat\n{capacity}%",
+    "format-plugged": "pow",
+    "format-full": "bat\n100%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+
+  "custom/cpu": {
+    "exec": "top -bn1 | awk '/Cpu/ {print int(100-$8)}'",
+    "interval": 3,
+    "format": "cpu\n{}%"
+  },
+
+  "clock": {
+    "format": "{:%d/%m\n%H:%M}",
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "custom/power": {
+    "format": "pow",
+    "tooltip": false,
+    "on-click": "systemctl poweroff",
+    "on-click-right": "systemctl reboot"
+  }
+}

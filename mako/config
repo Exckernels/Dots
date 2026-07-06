@@ -1,0 +1,22 @@
+font=JetBrains Mono 10
+width=320
+height=90
+margin=8
+padding=8
+border-size=1
+border-radius=7
+
+background-color=#000000
+text-color=#ffffff
+border-color=#ffffff
+progress-color=over #ffffff
+
+default-timeout=3500
+ignore-timeout=0
+
+anchor=top-right
+layer=overlay
+
+icons=0
+markup=1
+actions=1

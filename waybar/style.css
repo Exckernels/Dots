@@ -1,0 +1,126 @@
+window#waybar {
+    background: #000000;
+    color: #e6e6e6;
+    border-radius: 0;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 5px 0;
+}
+
+#workspaces {
+    background: transparent;
+}
+
+#workspaces button {
+    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 4px 0;
+    margin: 0;
+    min-width: 32px;
+    min-height: 18px;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.14);
+    border-left: 2px solid #ffffff;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#pulseaudio,
+#bluetooth,
+#network,
+#battery,
+#custom-cpu,
+#clock,
+#custom-power {
+    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    font-weight: 700;
+    color: #d0d0d0;
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+    margin: 0;
+    min-width: 32px;
+    min-height: 0;
+}
+
+#battery.warning {
+    color: #aaaaaa;
+}
+
+#battery.critical {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+#custom-power {
+    color: #ffffff;
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 0.95);
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 0;
+}
+
+tooltip label {
+    padding: 6px;
+}
+
+
+#workspaces button {
+    color: #666666;
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-left: 2px solid transparent;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+
+#workspaces button label {
+    color: inherit;
+    background: transparent;
+    background-image: none;
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    border-left: 2px solid #555555;
+    box-shadow: none;
+    outline: none;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background: transparent;
+    background-color: transparent;
+    background-image: none;
+    border-left: 2px solid #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+#workspaces button.active label {
+    color: #ffffff;
+}
