@@ -16,6 +16,9 @@ Monochrome rice based on openSUSE Tumbleweed & the niri compositor
 
 ```text
 .
+├── desktop
+│   ├── image.png
+│   └── wtl0g.png
 ├── fastfetch
 │   └── config.jsonc
 ├── fish
@@ -35,11 +38,22 @@ Monochrome rice based on openSUSE Tumbleweed & the niri compositor
 │   └── config
 ├── niri
 │   └── config.kdl
+├── README.md
+├── wallpaper
+│   └── saasa.png
 └── waybar
     ├── config
     └── style.css
 
-12 directories, 11 files
+14 directories, 15 files
 ```
 
 ## Screenshot
+
+### Desktop 
+![des](./desktop/image.png)
+
+### Terminal
+![term](./desktop/wtl0g.png)
+
+
